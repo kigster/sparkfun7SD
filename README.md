@@ -1,28 +1,28 @@
 ## Sparkfun7SD
 
 
-Set of libraries for using Sparkfun 7-segment displays (4 digit), but using different means of connectivity as subclasses. Based on tutorials @ https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display
+Set of libraries for using Sparkfun 7-segment displays (4 digit), but using different means of connectivity as subclasses. It is based on the tutorials pulished @ https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display
 
 ## The hardware
 
-These little displays are very convenient to use, and while not the cheapest, are still [pretty affordable at $12.95](https://www.sparkfun.com/products/11441).
+These little displays are very neat and convenient to use, and while not the cheapest, are still [pretty affordable at $12.95](https://www.sparkfun.com/products/11441).
 
-They provide Serial, I2C and SPI interfaces for communications.   There are very nice examples and tutorials online, but I wanted to be able to access the display without having to worry which communication protocol to use.
+They are mounted on what appears to be a modified Arduino Pro Mini, and support Serial, I2C and SPI interfaces for communications.   There are very nice examples and tutorials online, but I wanted to be able to access the display without having to worry which communication protocol to use.
 
-The the top level abstract class ```Sparkfun7SD``` is responsible for the actual commands sent to the display, while the subclasses are responsible for implementing the appropriate underlying protocol.
+The top level abstract class ```Sparkfun7SD``` is responsible for the actual commands sent to the display, while the subclasses are responsible for implementing the appropriate communications protocol.
 
-## Protocols supported
+## Protocols currently supported
 
 The library implements:
 
 * Serial
 * I2C
 
-And will soon also implement
+Not currently implemented:
 
 * SPI
 
-Whoohoo! :)
+It's probably about 20 minute excercize to implement SPI interface too, so when I find them I'll add that also :)  In the meantime, feel free to fork and submit a pull request if you add an implementation!
 
 ## Examples
 
