@@ -11,6 +11,19 @@ They provide Serial, I2C and SPI interfaces for communications.   There are very
 
 The the top level abstract class ```Sparkfun7SD``` is responsible for the actual commands sent to the display, while the subclasses are responsible for implementing the appropriate underlying protocol.
 
+## Protocols supported
+
+The library implements:
+
+* Serial
+* I2C
+
+And will soon also implement
+
+* SPI
+
+Whoohoo! :)
+
 ## Examples
 
 Probably the simplest is the example in the ```Sparkfun7SD_Serial``` folder:
