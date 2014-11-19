@@ -1,7 +1,7 @@
 ## Sparkfun7SD
 
 
-Set of libraries for using Sparkfun 7-segment displays (4 digit), but using different means of connectivity as subclasses. It is based on the tutorials pulished @ https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display
+Set of libraries for using Sparkfun 7-segment displays (4 digit), but using different means of connectivity as subclasses. It is based on the tutorials published @ https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display
 
 ## The hardware
 
@@ -22,7 +22,7 @@ Not currently implemented:
 
 * SPI
 
-It's probably about 20 minute excercize to implement SPI interface too, so when I find them I'll add that also :)  In the meantime, feel free to fork and submit a pull request if you add an implementation!
+It's probably about 20 minute excercize to implement SPI interface too, so when I find the time I'll add that feature :)  In the meantime, feel free to fork and submit a pull request if you add an implementation!
 
 ## Examples
 
