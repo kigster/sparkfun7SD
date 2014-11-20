@@ -51,14 +51,14 @@ To switch from using Serial to I2C, simply edit the first lines. All other usage
 
 ```c++
 #include <Sparkfun7SD_I2C.h>
-Sparkfun7SD_I2C display7s;
+Sparkfun7SD_I2C display7s;  // this constructor uses default I2C address 0x71
 ```
 
 And to switch to SPI:
 
 ```c++
 #include <Sparkfun7SD_SPI.h>
-Sparkfun7SD_SPI display7s;
+Sparkfun7SD_SPI display7s;  // this constructor uses default SS pin 8
 ```
 
 
