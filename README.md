@@ -5,6 +5,8 @@ Set of libraries for using Sparkfun 7-segment displays (4 digit), but using diff
 
 ## The hardware
 
+<img src="https://raw.githubusercontent.com/kigster/sparkfun7SD/master/sparfun7SD.jpg">
+
 These little displays are very neat and convenient to use, and while not the cheapest, are still [pretty affordable at $12.95](https://www.sparkfun.com/products/11441).
 
 They are mounted on what appears to be a modified Arduino Pro Mini, and support Serial, I2C and SPI interfaces for communications.   There are very nice examples and tutorials online, but I wanted to be able to access the display without having to worry which communication protocol to use.
