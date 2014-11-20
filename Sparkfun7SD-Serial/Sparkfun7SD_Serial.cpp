@@ -55,7 +55,7 @@ void Sparkfun7SD_Serial::brightness(byte value) {
     Sparkfun7SD::brightness(value);
 
 }
-void Sparkfun7SD_Serial::print(String message) {
+void Sparkfun7SD_Serial::print(char * message) {
     clear();
     _Serial7Segment->print(message);
 }
