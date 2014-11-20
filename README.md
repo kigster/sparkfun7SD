@@ -17,12 +17,9 @@ The library implements:
 
 * Serial
 * I2C
-
-Not currently implemented:
-
 * SPI
 
-It's probably about 20 minute excercize to implement SPI interface too, so when I find the time I'll add that feature :)  In the meantime, feel free to fork and submit a pull request if you add an implementation!
+Whoohoo! :)
 
 ## Examples
 
@@ -54,6 +51,14 @@ To switch from using Serial to I2C, simply edit the first lines:
 #include <Sparkfun7SD_I2C.h>
 Sparkfun7SD_I2C display7s;
 ```
+
+And to switch to SPI,
+
+```c++
+#include <Sparkfun7SD_SPI.h>
+Sparkfun7SD_SPI display7s;
+```
+
 
 ## Contributing
 
