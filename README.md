@@ -45,14 +45,14 @@ void loop() {
 }
 ```
 
-To switch from using Serial to I2C, simply edit the first lines:
+To switch from using Serial to I2C, simply edit the first lines. All other usage of the display remains unchanged.
 
 ```c++
 #include <Sparkfun7SD_I2C.h>
 Sparkfun7SD_I2C display7s;
 ```
 
-And to switch to SPI,
+And to switch to SPI:
 
 ```c++
 #include <Sparkfun7SD_SPI.h>
