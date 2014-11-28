@@ -38,12 +38,16 @@ void Sparkfun7SD::printUnits(float value, char *type) {
 
 void Sparkfun7SD::printTime(uint8_t hours, uint8_t minutes, bool colonShown) {
     uint8_t h = hours % 12;
-    if (h == 0) {
-        h = 12;
+    if (h == 0) h = 12;
+    // avoid redrawing screen if nothing changed
+    if (hours != _prevHour || minutes != _prevMinutes) {
+        sprintf(_buffer, "%2d%02d", h, minutes);
+        clear();
+        print(_buffer);
+        _prevHour = hours;
+        _prevMinutes = minutes;
     }
-    sprintf(_buffer, "%2d%02d", h, minutes);
-    clear();
-    print(_buffer);
+
     if (colonShown)
         decimals(COLON);
     else

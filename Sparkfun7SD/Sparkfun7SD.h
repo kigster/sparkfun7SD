@@ -49,6 +49,7 @@ public:
     virtual void printTime(uint8_t hours, uint8_t minutes, bool colonShown);
 protected:
     char _buffer[DIGITS + 1];
+    uint8_t _prevHour, _prevMinutes;
 private:
 };
 
