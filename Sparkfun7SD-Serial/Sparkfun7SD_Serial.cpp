@@ -8,6 +8,8 @@
  */
 
 #include "Sparkfun7SD_Serial.h"
+#include <Sparkfun7SD.h>
+#include <SoftwareSerial.h>
 
 Sparkfun7SD_Serial::Sparkfun7SD_Serial(uint8_t serialPin) {
     _pinTx = serialPin;
@@ -26,19 +28,7 @@ void Sparkfun7SD_Serial::begin() {
 
 void Sparkfun7SD_Serial::printTime(uint8_t hours, uint8_t minutes,
         bool colonShown) {
-    uint8_t h = hours % 12;
-    if (h == 0) {
-        h = 12;
-    }
-    char buffer[DIGITS];
-    sprintf(buffer, "%2d%02d", h, minutes);
-    clear();
-    print(buffer);
-    if (colonShown)
-        decimals(COLON);
-    else
-        decimals(0b000000);
-
+    Sparkfun7SD::printTime(hours, minutes, colonShown);
 }
 
 void Sparkfun7SD_Serial::printUnits(float value, char *type) {
@@ -46,9 +36,7 @@ void Sparkfun7SD_Serial::printUnits(float value, char *type) {
 }
 
 void Sparkfun7SD_Serial::clear() {
-    beginWrite();
-    write(0x76); // Reset the display - this forces the cursor to return to the beginning of the display
-    endWrite();
+    Sparkfun7SD::clear();
 }
 
 void Sparkfun7SD_Serial::brightness(byte value) {

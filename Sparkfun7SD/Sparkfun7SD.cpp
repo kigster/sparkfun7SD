@@ -26,7 +26,7 @@ void Sparkfun7SD::print(char *message) {
 }
 
 void Sparkfun7SD::printUnits(float value, char *type) {
-    char buffer[DIGITS];
+    char buffer[DIGITS + 1];
     uint8_t decimal = (int) (10.0 * (value - ((int) value)));
     sprintf(buffer, "%2d%d%s", (int) value, decimal, type);
 
